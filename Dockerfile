@@ -1,7 +1,9 @@
 FROM openjdk:8-jdk-stretch
 
-ENV GRAILS_VERSION="2.5.6"
+ARG GRAILS_VERSION="4.0.2"
+
 WORKDIR /usr/src/app
+
 # set bash as default shell
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
